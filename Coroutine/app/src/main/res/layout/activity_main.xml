@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_title_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:gravity="center"
+        android:text="CỘNG 1 SAU KHI DELAY 1S "
+        android:textStyle="bold"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.3" />
+
+
+    <TextView
+        android:id="@+id/tv_cong"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.7"
+        app:layout_constraintHeight_percent="0.15"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#b71c1c"
+        android:textSize="25dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:gravity="center"
+        android:text="TRỪ 1 SAU KHI DELAY 1S"
+        android:textStyle="bold"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_1"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <TextView
+        android:id="@+id/tv_tru"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#b71c1c"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintTop_toBottomOf="@id/tv_cong"
+        app:layout_constraintWidth_percent="0.7" />
+
+
+
+    <TextView
+        android:id="@+id/tv_title_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:gravity="center"
+        android:text="NHÂN 2 SAU KHI DELAY 5S"
+        android:textStyle="bold"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_2"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <TextView
+        android:id="@+id/tv_nhan"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#b71c1c"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintTop_toBottomOf="@id/tv_tru"
+        app:layout_constraintWidth_percent="0.7" />
+
+
+
+    <TextView
+        android:id="@+id/tv_title_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:gravity="center"
+        android:text="RANDOM 1 SỐ NGẪU NHIÊN MỖI 3S"
+        android:textStyle="bold"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_3"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <TextView
+        android:id="@+id/tv_random"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#b71c1c"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintTop_toBottomOf="@id/tv_nhan"
+        app:layout_constraintWidth_percent="0.7" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_cong"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="DỪNG CỘNG"
+        android:textStyle="bold"
+        android:background="@drawable/bg_button"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_4"
+        app:layout_constraintWidth_percent="0.45" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_tru"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
+        android:text="DỪNG TRỪ"
+        android:textStyle="bold"
+        android:background="@drawable/bg_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_4"
+        app:layout_constraintWidth_percent="0.45" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_nhan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="DỪNG NHÂN"
+        android:textStyle="bold"
+        android:background="@drawable/bg_button"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_cong"
+        app:layout_constraintWidth_percent="0.45" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_radom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="DỪNG RANDOM"
+        android:textStyle="bold"
+        android:background="@drawable/bg_button"
+        android:layout_marginRight="10dp"
+        app:layout_constraintRight_toLeftOf="@id/bt_tru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_tru"
+        app:layout_constraintWidth_percent="0.45" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
